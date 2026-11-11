@@ -21,7 +21,7 @@ a{color:var(--ink)}
 :focus-visible{outline:3px solid #2f6fb3;outline-offset:2px}
 .site-header{background:var(--ink);border-bottom:1px solid rgba(255,255,255,.17)}
 .site-header-inner{width:min(100% - 32px,1180px);margin:0 auto;height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand img{display:block;height:34px;width:auto}
+.brand img{display:block;height:46px;width:auto}
 .official{color:#d3dce3;font-size:.86rem;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35)}.official:hover{color:var(--gold)}
 main.shell{flex:1;width:min(100% - 32px,1180px);margin:0 auto;padding:clamp(24px,5vh,56px) 0;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(20px,4vw,48px);align-items:start}
 .eyebrow{display:flex;align-items:center;gap:10px;font:600 .82rem/1 var(--body);letter-spacing:.06em;text-transform:uppercase;color:#7a5a12;margin:0 0 14px}
@@ -181,7 +181,6 @@ a{color:#101c2b}@page{margin:12mm}
     <p class="hint">Cole o código do questionário (começa com PB2-) para ver o resultado novamente.</p>
     <label for="docCodeInput" class="hint">Código do questionário</label>
     <div class="code-row"><input type="text" id="docCodeInput" placeholder="PB2-…" autocomplete="off" spellcheck="false"><button class="btn" id="docCodeBtn" type="button">Consultar</button></div>
-    <p class="emerg" style="margin-top:18px"><strong>Emergência agora?</strong> Afaste-se do local e ligue <strong>193</strong>.</p>
   </aside>
 </main>
 
@@ -199,7 +198,6 @@ a{color:#101c2b}@page{margin:12mm}
     </div>
     <div class="chat-sub">
       <ol class="prog" aria-label="Etapas"><li class="prog-step">Objetivo</li><li class="prog-step">Imóvel</li><li class="prog-step">Uso e riscos</li><li class="prog-step">Situação</li><li class="prog-step">Resultado</li></ol>
-      <span>Emergência? <a href="tel:193">Ligue 193</a></span>
     </div>
     <div class="chat-messages" id="chatMessages" role="log" aria-live="polite" aria-relevant="additions" aria-label="Conversa com a Sara"></div>
     <div class="chat-input">
