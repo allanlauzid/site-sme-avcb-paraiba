@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chatbot — AVCB Paraíba | Sá Moraes Engenharia</title>
+<meta name="description" content="Simulação gratuita para regularização no Corpo de Bombeiros Militar da Paraíba: descubra o caminho provável (PTS, PCIS, PCI, renovação, evento, prazos) e os documentos, com a base legal de cada item.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://avcbparaiba.com.br/chatbot.html">
+<link rel="icon" href="assets/logo-oficial.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>(function(){var e=/[?&]embed=1/.test(location.search)&&window.parent!==window,m=window.matchMedia&&window.matchMedia("(max-width: 720px)").matches;if(e)document.documentElement.classList.add("chat-embed");if(e||m)document.documentElement.classList.add("chat-full")})();</script>
+<style>
+:root{color-scheme:light;--ink:#101c2b;--ink2:#1d2c3f;--muted:#536272;--paper:#f3f4f2;--card:#fffdf8;--line:rgba(16,28,43,.14);--gold:#ffce36;--gold2:#ffe275;--gold-soft:#fdf3d6;--bot:#dde5ed;--ok:#1f6b45;--ok-soft:#e6f2ea;--wait:#8a6517;--wait-soft:#f8efd9;--no:#8a2a20;--no-soft:#f6e3e0;--info:#2c4a6b;--info-soft:#e7eef5;--r:14px;--shadow:0 16px 42px rgba(16,28,43,.10);--head:'Barlow Semi Condensed',system-ui,sans-serif;--body:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html,body{margin:0}
+body{min-height:100vh;display:flex;flex-direction:column;background:radial-gradient(circle at 88% 2%,rgba(205,163,72,.14),transparent 28rem),var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
+a{color:var(--ink)}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;z-index:9;background:var(--gold);padding:8px 12px}
+:focus-visible{outline:3px solid #2f6fb3;outline-offset:2px}
+.site-header{background:var(--ink);border-bottom:1px solid rgba(255,255,255,.17)}
+.site-header-inner{width:min(100% - 32px,1180px);margin:0 auto;height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand img{display:block;height:34px;width:auto}
+.official{color:#d3dce3;font-size:.86rem;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35)}.official:hover{color:var(--gold)}
+main.shell{flex:1;width:min(100% - 32px,1180px);margin:0 auto;padding:clamp(24px,5vh,56px) 0;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(20px,4vw,48px);align-items:start}
+.eyebrow{display:flex;align-items:center;gap:10px;font:600 .82rem/1 var(--body);letter-spacing:.06em;text-transform:uppercase;color:#7a5a12;margin:0 0 14px}
+.eyebrow a{display:inline-grid;place-items:center;width:28px;height:28px;border:1px solid var(--line);border-radius:8px;background:#fff;text-decoration:none}
+h1{font:700 clamp(2.1rem,4.6vw,3.6rem)/1.02 var(--head);margin:0 0 14px;letter-spacing:-.01em}
+.subtitle{color:var(--muted);max-width:620px;margin:0 0 22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 18px;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--ink);font:600 .95rem var(--body);cursor:pointer;text-decoration:none;transition:background .2s,border-color .2s}
+.btn:hover{border-color:var(--ink)}.btn-primary{background:var(--gold);border-color:var(--gold);text-transform:uppercase;letter-spacing:.03em}.btn-primary:hover{background:var(--gold2);border-color:var(--gold2)}
+.btn-big{min-height:56px;padding:14px 28px;font-size:1rem}
+.launch-note{font-size:.85rem;color:var(--muted);margin:10px 0 26px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:22px}
+.card h2{font:700 1.25rem var(--head);margin:0 0 12px}
+.src-card{display:flex;gap:14px;max-width:620px}.src-card p{margin:0 0 12px;color:var(--muted);font-size:.92rem}
+.src-ico{flex:none;width:42px;height:42px;border-radius:10px;background:var(--ink);color:var(--gold);display:grid;place-items:center}
+.steps{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:12px}.steps li{display:flex;gap:12px}.steps b{flex:none;width:28px;height:28px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font-size:.85rem}
+.steps strong{display:block}.steps span{color:var(--muted);font-size:.9rem}
+.code-row{display:flex;gap:8px}.code-row input{flex:1;min-width:0;min-height:46px;border:1px solid var(--line);border-radius:10px;padding:0 12px;font:500 .95rem var(--body);background:#fff}
+.code-row input[aria-invalid=true]{border-color:var(--no)}
+.hint{color:var(--muted);font-size:.86rem;margin:6px 0 10px}
+.emerg{font-size:.86rem;color:var(--muted)}.emerg strong{color:var(--no)}
+footer.site-foot{background:var(--ink);color:#b9c6d1;font-size:.82rem;padding:16px}.site-foot div{width:min(100% - 32px,1180px);margin:0 auto}
+/* Chat */
+.chat-panel{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;background:rgba(16,28,43,.55);backdrop-filter:blur(3px);opacity:0;transition:opacity .2s}
+.chat-panel.on{opacity:1}
+.chat-box{width:min(760px,100% - 32px);height:min(880px,100vh - 32px);background:#fffdf6;border-radius:16px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.chat-head{display:flex;align-items:center;gap:8px;background:var(--ink);color:#fff;padding:10px 12px}
+.chat-head .who{display:flex;align-items:center;gap:10px;margin-right:auto;min-width:0}.chat-head img{width:40px;height:40px;border-radius:50%;background:#fff;object-fit:contain}
+.chat-head .who b{display:block;font:700 1.05rem var(--head)}.chat-head .who span{font-size:.75rem;color:#b9c6d1}
+.icon-btn{width:40px;height:40px;border-radius:50%;border:0;background:#fff;color:var(--ink);display:grid;place-items:center;cursor:pointer}.icon-btn:disabled{opacity:.4;cursor:default}.icon-btn svg{width:18px;height:18px}
+.chat-sub{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:6px 14px;background:#f1f3f5;border-bottom:1px solid var(--line);font-size:.78rem}
+.chat-sub a{color:var(--no);font-weight:600}
+.prog{display:flex;gap:4px;list-style:none;margin:0;padding:0}.prog-step{font-size:.72rem;color:var(--muted);padding:3px 8px;border-radius:99px;background:#e4e8ec}
+.prog-step.done{background:#cfe3d6;color:var(--ok)}.prog-step.cur{background:var(--gold);color:var(--ink);font-weight:600}
+.chat-messages{flex:1;overflow-y:auto;padding:18px;display:flex;flex-direction:column;gap:10px;scroll-behavior:smooth}
+.bubble{max-width:86%;padding:11px 15px;border-radius:16px;font-size:.93rem;line-height:1.45;animation:fadeIn .25s ease-out;overflow-wrap:anywhere}
+.bubble.bot{align-self:flex-start;background:var(--bot);border-bottom-left-radius:4px}
+.bubble.user{align-self:flex-end;background:var(--ink);color:#fff;border-bottom-right-radius:4px;cursor:pointer}
+.bubble.user:hover{background:var(--ink2)}
+.bubble.no-anim{animation:none}
+.bubble.note{background:var(--gold-soft);font-size:.84rem}
+.bubble .muted,.muted{color:var(--muted)}
+.bubble a{color:inherit;text-decoration:underline}
+.typing{display:flex;gap:5px;padding:14px 16px}.typing span{width:7px;height:7px;border-radius:50%;background:#7c8a99;animation:blink 1s infinite}.typing span:nth-child(2){animation-delay:.15s}.typing span:nth-child(3){animation-delay:.3s}
+@keyframes blink{0%,100%{opacity:.25}50%{opacity:1}}@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.chat-input{border-top:1px solid var(--line);padding:12px 14px calc(12px + env(safe-area-inset-bottom));background:#fff;max-height:52vh;overflow-y:auto}
+.chat-options{display:flex;flex-wrap:wrap;gap:8px}
+.opt{min-height:44px;padding:9px 14px;border-radius:12px;border:1px solid #c9d2db;background:#fff;color:var(--ink);font:500 .9rem var(--body);cursor:pointer;text-align:left}
+.opt:hover:not(:disabled){border-color:var(--ink);background:#f7f8f9}.opt:disabled{opacity:.55}
+.opt.ghost{border-style:dashed;color:var(--muted)}
+.opt.confirm{background:var(--gold);border-color:var(--gold);font-weight:700;margin-top:4px}
+.multi{display:flex;flex-wrap:wrap;gap:8px;width:100%}
+.chip{min-height:42px;padding:8px 12px;border-radius:99px;border:1px solid #c9d2db;background:#fff;font:500 .86rem var(--body);cursor:pointer;text-align:left}
+.chip.on{background:var(--ink);border-color:var(--ink);color:#fff}.chip.excl{border-style:dashed}
+.chat-form{display:flex;gap:8px;margin-top:10px}.chat-form input{flex:1;min-width:0;min-height:48px;border:1px solid #e3c45c;background:#fff8e1;border-radius:12px;padding:0 14px;font:500 1rem var(--body)}
+.chat-form button{width:48px;border-radius:12px;border:0;background:var(--gold);cursor:pointer}
+.sugestoes{display:flex;flex-direction:column;gap:4px;margin-top:8px}.sug{text-align:left;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;font:500 .9rem var(--body);cursor:pointer}.sug:hover{border-color:var(--ink)}.sug-vazio{font-size:.85rem;color:var(--muted);padding:6px}
+/* Modais */
+.modal{position:fixed;inset:0;z-index:80;background:rgba(16,28,43,.6);display:flex;align-items:center;justify-content:center;padding:16px}
+.modal-box{position:relative;background:#fff;border-radius:16px;width:min(860px,100%);max-height:calc(100vh - 32px);display:flex;flex-direction:column;box-shadow:var(--shadow)}
+.modal-box.sm{width:min(460px,100%)}
+.modal-box>h3{font:700 1.35rem var(--head);margin:0;padding:18px 56px 12px 22px;border-bottom:1px solid var(--line)}
+.modal-body{overflow-y:auto;padding:16px 22px}
+.modal-close{position:absolute;right:12px;top:12px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:1.3rem;cursor:pointer}
+.modal-actions{display:flex;flex-wrap:wrap;gap:8px;padding:12px 22px 18px;border-top:1px solid var(--line)}
+.res-head{border-radius:12px;padding:14px 16px;margin-bottom:14px}.res-head h4{font:700 1.3rem/1.2 var(--head);margin:6px 0}.res-head p{margin:0}
+.res-badge,.ck-badge,.doc-cl,.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.02em;padding:3px 8px;border-radius:99px;background:rgba(255,255,255,.7)}
+.est-ok{background:var(--ok-soft)}.est-ok .res-badge{color:var(--ok)}.est-no{background:var(--no-soft)}.est-wait{background:var(--wait-soft)}.est-wait .res-badge{color:var(--wait)}.est-info{background:var(--info-soft)}
+.classif{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;margin:0 0 14px}.classif div{background:#f6f7f8;border-radius:10px;padding:8px 10px}.classif dt{font-size:.74rem;color:var(--muted)}.classif dd{margin:0;font-weight:600;font-size:.9rem}
+#resultBody section,#resultBody footer{margin:0 0 16px}
+#resultBody h5,.p-resp h5{font:700 1.08rem var(--head);margin:0 0 8px}
+.checks{list-style:none;padding:0;margin:0;display:grid;gap:6px}.checks li{border-radius:10px;padding:8px 12px;display:grid;grid-template-columns:auto 1fr;gap:2px 10px;align-items:baseline}.checks .ck-t{grid-column:1/-1;font-size:.86rem;color:#33414f}
+.box{border-radius:12px;padding:12px 16px}.box.wait{background:var(--wait-soft)}.box.ok{background:var(--ok-soft)}.box ul,.box ol{margin:0;padding-left:20px}
+.afirm,.alertas,.prazos{padding-left:20px;margin:0}.afirm li,.alertas li,.prazos li{margin-bottom:8px}.al-atencao{color:#5b2d00}
+.base{font-size:.78rem;color:var(--muted);margin-top:2px}.base a{color:var(--muted)}
+.doc-grupo{margin:10px 0 14px}.doc-grupo h6{font:700 .98rem var(--head);margin:0 0 6px;padding:4px 10px;background:var(--ink);color:#fff;border-radius:8px;display:inline-block}
+.doc{border:1px solid var(--line);border-left:5px solid #9aa7b4;border-radius:10px;padding:10px 12px;margin-bottom:8px}.doc p{margin:4px 0;font-size:.88rem}
+.doc-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.c-exigido{border-left-color:var(--ok)}.c-exigido .doc-cl{background:var(--ok-soft);color:var(--ok)}
+.c-condicionado{border-left-color:#c79a1c}.c-condicionado .doc-cl{background:var(--wait-soft);color:var(--wait)}
+.c-a_confirmar{border-left-color:#a3502f}.c-a_confirmar .doc-cl{background:var(--no-soft);color:var(--no)}
+.c-recomendado .doc-cl{background:var(--info-soft);color:var(--info)}
+.motivo{color:#33414f}.modelo{display:inline-block;font-size:.82rem;margin-top:4px;font-weight:600}
+.res-foot{font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}.codigo code{word-break:break-all;font-size:.74rem}
+.ans{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr) auto;gap:8px;padding:9px 0;border-bottom:1px solid var(--line);align-items:center}.ans-q{color:var(--muted);font-size:.86rem}.ans-v{font-weight:600}.ans-ns .ans-v{color:var(--wait)}
+.btn-link{border:0;background:none;color:#2f6fb3;font:600 .85rem var(--body);cursor:pointer;text-decoration:underline}
+.qr-row{display:flex;flex-wrap:wrap;gap:24px;justify-content:center}.qr-row figure{margin:0;text-align:center;width:220px}.qr-row svg{width:200px;height:200px}.qr-row figcaption{font-size:.85rem;margin-top:6px}
+.fontes{padding-left:18px}.fontes li{margin-bottom:6px;font-size:.9rem}.tag{background:var(--ok-soft);color:var(--ok)}
+.terms h5{font:700 1.02rem var(--head);margin:14px 0 4px}.terms p,.terms li{font-size:.9rem}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);z-index:120;background:var(--ink);color:#fff;padding:12px 18px;border-radius:12px;max-width:min(560px,92vw);box-shadow:var(--shadow);opacity:0;transition:.2s}.toast.on{opacity:1;transform:translateX(-50%)}
+/* Página fixa: sem rolagem vertical; o conteúdo se ajusta à altura da tela */
+html.fixa,html.fixa body{height:100%;overflow:hidden}
+html.fixa body{height:100dvh}
+html.fixa main.shell{min-height:0;align-content:center;padding:clamp(14px,3vh,40px) 0}
+html.fixa .site-foot{padding:10px 16px}
+/* Telas pequenas / incorporado */
+@media (max-width:900px){main.shell{grid-template-columns:1fr}}
+.chat-full body{overflow:hidden}
+.chat-full .site-header,.chat-full main.shell,.chat-full footer.site-foot{display:none}
+.chat-full .chat-panel{background:#fffdf6;backdrop-filter:none}
+.chat-full .chat-box{width:100%;height:100%;border-radius:0;box-shadow:none;height:100dvh}
+@media (max-width:720px){.chat-head .who span{display:none}.chat-head .who b{font-size:1rem}.bubble{max-width:92%}.prog-step{padding:3px 6px}.prog-step:not(.cur){font-size:0;width:14px;height:8px;padding:0}.modal{padding:0}.modal-box{max-height:100dvh;height:100dvh;border-radius:0}.ans{grid-template-columns:1fr auto}.ans-q{grid-column:1/-1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+[hidden]{display:none!important}
+</style>
+<style id="printCss" media="not all">
+body{font-family:Inter,Arial,sans-serif;color:#101c2b;font-size:11.5px;line-height:1.45;margin:18px}
+.p-head{display:flex;gap:14px;align-items:center;border-bottom:3px solid #ffce36;padding-bottom:8px;margin-bottom:8px}.p-head img{height:34px}.p-head h1{font-size:17px;margin:0}.p-head p{margin:2px 0 0;color:#536272}
+.p-aviso{background:#f8efd9;padding:6px 10px;border-radius:6px;margin-bottom:10px}
+.res-head{border:1px solid #ccd;border-radius:8px;padding:8px 10px;margin-bottom:8px}.res-head h4{font-size:15px;margin:4px 0}.res-badge,.ck-badge,.doc-cl{font-size:9.5px;font-weight:700;border:1px solid #aab;border-radius:9px;padding:1px 6px}
+.classif{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px}.classif div{border:1px solid #dde;border-radius:6px;padding:4px 8px}.classif dt{font-size:9.5px;color:#536272}.classif dd{margin:0;font-weight:600}
+h5{font-size:13px;margin:10px 0 4px}h6{font-size:12px;margin:8px 0 4px;border-bottom:1px solid #ccd}
+.checks{list-style:none;padding:0}.checks li{margin-bottom:4px}.ck-t{display:block;color:#33414f}
+ul,ol{padding-left:18px;margin:0}li{margin-bottom:3px}.base{font-size:9.5px;color:#536272}.base a{color:#536272}
+.doc{border:1px solid #dde;border-left:4px solid #9aa;border-radius:6px;padding:5px 8px;margin-bottom:5px;page-break-inside:avoid}.doc p{margin:2px 0}.doc-top{display:flex;justify-content:space-between;gap:8px}
+.c-exigido{border-left-color:#1f6b45}.c-condicionado{border-left-color:#c79a1c}.c-a_confirmar{border-left-color:#a3502f}
+.box{border:1px solid #dde;border-radius:6px;padding:6px 10px}.hint{color:#536272;font-size:10px}.modelo{display:block;font-size:10px}
+.res-foot{border-top:1px solid #ccd;margin-top:10px;padding-top:6px;color:#536272;font-size:10px}.codigo code{word-break:break-all}
+.p-resp table{border-collapse:collapse;width:100%}.p-resp td{border-bottom:1px solid #e3e6ea;padding:3px 4px;vertical-align:top}.p-resp td:first-child{color:#536272;width:40%}
+.p-qr{display:flex;gap:30px;margin-top:12px;page-break-inside:avoid}.p-qr div{text-align:center;width:150px;font-size:10px}.p-qr svg{width:120px;height:120px;display:block;margin:0 auto 4px}
+a{color:#101c2b}@page{margin:12mm}
+</style>
+</head>
+<body>
+<a class="skip" href="#chatLaunchBtn">Ir para o início da simulação</a>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand" href="index.html" aria-label="Sá Moraes Engenharia — página inicial do AVCB Paraíba">
+      <picture><source media="(min-width: 681px)" srcset="assets/logo-sme-desktop.svg"><img src="assets/logo-sme.svg" alt="Sá Moraes Engenharia" width="472" height="54"></picture>
+    </a>
+    <a class="official" href="https://samoraesengenharia.com.br/" target="_blank" rel="noopener noreferrer">samoraesengenharia.com.br</a>
+  </div>
+</header>
+
+<main class="shell" id="conteudo">
+  <section>
+    <p class="eyebrow"><a href="index.html" aria-label="Voltar para a página inicial"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></a> AVCB Paraíba · Sá Moraes Engenharia</p>
+    <h1>Descubra o caminho<br>para o seu AVCB</h1>
+    <p class="subtitle">Responda algumas perguntas sobre o imóvel, o evento ou o seu processo e veja o caminho provável no Corpo de Bombeiros da Paraíba — PTS, projeto, vistoria, renovação, prazos — e os documentos, cada um com o motivo e a base legal.</p>
+    <button type="button" id="chatLaunchBtn" class="btn btn-primary btn-big" aria-haspopup="dialog" aria-controls="chatPanel">Começar a simulação</button>
+    <p class="launch-note">Gratuito. Leva de 3 a 6 minutos. Vale para todos os 223 municípios da Paraíba.</p>
+    <aside class="card src-card" aria-labelledby="srcTitle">
+      <span class="src-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg></span>
+      <div><h2 id="srcTitle">Base oficial do chatbot</h2>
+        <p>As orientações seguem a Lei Estadual nº 9.625/2011 e as normas técnicas, resoluções e portarias do Corpo de Bombeiros Militar da Paraíba (CBMPB), conferidas até 10/11/2026. Para o processo simplificado, a referência é a NT 07/2024. Quando as normas não permitem concluir, o resultado mostra o ponto a confirmar.</p>
+        <button type="button" class="btn" data-abre="sources">Ver as normas e modelos usados</button>
+      </div>
+    </aside>
+  </section>
+  <aside class="card" aria-label="Como funciona e consulta por código">
+    <h2>Como funciona</h2>
+    <ol class="steps">
+      <li><b>1</b><div><strong>Responda sobre o imóvel ou o processo</strong><span>Toda pergunta aceita “Não sei” — nada é presumido.</span></div></li>
+      <li><b>2</b><div><strong>Veja o caminho provável</strong><span>Quando falta dado ou as normas divergem, o resultado diz exatamente o quê.</span></div></li>
+      <li><b>3</b><div><strong>Receba os documentos</strong><span>Com motivo, base legal, modelos oficiais, PDF e QR Code.</span></div></li>
+    </ol>
+    <h2>Já fez a simulação?</h2>
+    <p class="hint">Cole o código do questionário (começa com PB2-) para ver o resultado novamente.</p>
+    <label for="docCodeInput" class="hint">Código do questionário</label>
+    <div class="code-row"><input type="text" id="docCodeInput" placeholder="PB2-…" autocomplete="off" spellcheck="false"><button class="btn" id="docCodeBtn" type="button">Consultar</button></div>
+    <p class="emerg" style="margin-top:18px"><strong>Emergência agora?</strong> Afaste-se do local e ligue <strong>193</strong>.</p>
+  </aside>
+</main>
+
+<footer class="site-foot"><div>© 2026 Sá Moraes Engenharia · Simulação de orientação — não substitui a análise do Corpo de Bombeiros Militar da Paraíba nem o responsável técnico. <a href="#" data-abre="terms" style="color:#d3dce3">Termos de uso</a></div></footer>
+
+<!-- Chat -->
+<div class="chat-panel" id="chatPanel" role="dialog" aria-modal="true" aria-labelledby="chatTitle" hidden>
+  <div class="chat-box">
+    <div class="chat-head">
+      <div class="who"><img src="assets/icone-chatbot-mascote-simplificado-sme.png" alt="" width="40" height="40"><div><b id="chatTitle">Sara · AVCB Paraíba</b><span>Assistente virtual da Sá Moraes Engenharia</span></div></div>
+      <button type="button" class="icon-btn" id="btnVoltar" aria-label="Voltar uma pergunta" title="Voltar uma pergunta" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button type="button" class="icon-btn" id="btnRecomecar" aria-label="Recomeçar" title="Recomeçar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="1 4 1 10 7 10"/><path d="M3.5 15a9 9 0 1 0 2.1-9.4L1 10"/></svg></button>
+      <button type="button" class="icon-btn" id="btnFontes" aria-label="Normas e modelos usados" title="Normas e modelos usados"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></button>
+      <button type="button" class="icon-btn" id="btnFechar" aria-label="Fechar o chat" title="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button>
+    </div>
+    <div class="chat-sub">
+      <ol class="prog" aria-label="Etapas"><li class="prog-step">Objetivo</li><li class="prog-step">Imóvel</li><li class="prog-step">Uso e riscos</li><li class="prog-step">Situação</li><li class="prog-step">Resultado</li></ol>
+      <span>Emergência? <a href="tel:193">Ligue 193</a></span>
+    </div>
+    <div class="chat-messages" id="chatMessages" role="log" aria-live="polite" aria-relevant="additions" aria-label="Conversa com a Sara"></div>
+    <div class="chat-input">
+      <div class="chat-options" id="chatOptions"></div>
+      <form class="chat-form" id="chatForm" hidden autocomplete="off"><input id="chatInput" type="text" enterkeyhint="send"><button type="submit" aria-label="Enviar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></form>
+      <div class="sugestoes" id="sugestoes" role="listbox" aria-label="Sugestões"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Resultado -->
+<div class="modal" id="resultModal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="resultTitle">
+  <button class="modal-close" type="button" aria-label="Fechar">×</button>
+  <h3 id="resultTitle">Resultado da simulação</h3>
+  <div class="modal-body" id="resultBody"></div>
+  <div class="modal-actions">
+    <button class="btn btn-primary" id="resultPdf" type="button">Gerar PDF</button>
+    <button class="btn" id="resultCopy" type="button">Copiar código</button>
+    <button class="btn" id="resultAnswers" type="button">Ver e alterar respostas</button>
+    <button class="btn" id="resultQr" type="button">QR Codes</button>
+    <button class="btn" id="resultWpp" type="button">Falar com a equipe técnica</button>
+    <button class="btn" id="resultEdit" type="button">Voltar ao chat</button>
+  </div>
+</div></div>
+
+<div class="modal" id="answersModal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="answersTitle">
+  <button class="modal-close" type="button" aria-label="Fechar">×</button>
+  <h3 id="answersTitle">Suas respostas</h3>
+  <div class="modal-body" id="answersBody"></div>
+</div></div>
+
+<div class="modal" id="qrModal" hidden><div class="modal-box sm" role="dialog" aria-modal="true" aria-labelledby="qrTitle">
+  <button class="modal-close" type="button" aria-label="Fechar">×</button>
+  <h3 id="qrTitle">QR Codes</h3>
+  <div class="modal-body"><div class="qr-row"><figure><div id="qrRes"></div><figcaption>Abrir este resultado</figcaption></figure><figure><div id="qrWpp"></div><figcaption>Falar com a equipe técnica no WhatsApp</figcaption></figure></div></div>
+</div></div>
+
+<div class="modal" id="sourcesModal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="srcModalTitle">
+  <button class="modal-close" type="button" aria-label="Fechar">×</button>
+  <h3 id="srcModalTitle">Normas e modelos usados</h3>
+  <div class="modal-body" id="sourcesBody"></div>
+</div></div>
+
+<div class="modal" id="confirmModal" hidden><div class="modal-box sm" role="alertdialog" aria-modal="true" aria-labelledby="confTitle">
+  <h3 id="confTitle">Recomeçar a simulação?</h3>
+  <div class="modal-body"><p>As respostas desta simulação serão apagadas deste navegador.</p></div>
+  <div class="modal-actions"><button class="btn btn-primary" id="confirmSim" type="button">Sim, recomeçar</button><button class="btn modal-close-alt" id="confirmNao" type="button">Cancelar</button></div>
+</div></div>
+
+<div class="modal" id="termsModal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="termsTitle">
+  <button class="modal-close" type="button" aria-label="Fechar">×</button>
+  <h3 id="termsTitle">Termos de uso — versão de 30/10/2026</h3>
+  <div class="modal-body terms">
+    <h5>1. O que é este serviço</h5><p>Ferramenta gratuita de orientação da Sá Moraes Engenharia sobre a regularização de edificações, estabelecimentos e eventos no Corpo de Bombeiros Militar da Paraíba (CBMPB).</p>
+    <h5>2. Limites</h5><p>O resultado é uma <strong>orientação inicial</strong>, baseada nas respostas informadas e nas normas conferidas até a data indicada. Ele não é certificado, não é aprovação, não substitui o projeto técnico, a responsabilidade técnica de profissional habilitado nem a análise e a vistoria do CBMPB. Quando as normas divergem ou faltam dados, o resultado indica o ponto a confirmar.</p>
+    <h5>3. Dados</h5><p>As respostas ficam guardadas apenas neste navegador, para você poder continuar depois. O nome é opcional e não entra no código, no link nem no QR Code. Nada é enviado à Sá Moraes Engenharia, salvo se você mesmo enviar a mensagem pelo WhatsApp. O código do questionário contém as respostas: compartilhe-o só com quem desejar.</p>
+    <h5>4. Atualização</h5><p>As normas mudam. Confira sempre a versão vigente no portal do CBMPB. Resultados antigos indicam a versão das regras com que foram gerados.</p>
+    <h5>5. Contato</h5><p>Sá Moraes Engenharia — WhatsApp (81) 99746-0029 — samoraesengenharia.com.br.</p>
+    <p><button class="btn" id="limparDados" type="button">Apagar meus dados deste navegador</button></p>
+  </div>
+</div></div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="assets/chatbot-pb/qrcode.js?v=20261111"></script>
+<script src="assets/chatbot-pb/dados.js?v=20261111"></script>
+<script src="assets/chatbot-pb/fluxo.js?v=20261111"></script>
+<script src="assets/chatbot-pb/motor.js?v=20261111"></script>
+<script src="assets/chatbot-pb/app.js?v=20261111"></script>
+<script>
+/* Mantém a página inicial fixa (sem rolagem): reduz o conteúdo proporcionalmente quando a tela é baixa. */
+(function () {
+  var root = document.documentElement, main = document.getElementById("conteudo");
+  if (!main) return;
+  function limpar() { main.style.zoom = ""; main.style.width = ""; }
+  /* Altura real do conteúdo (em pixels da tela), sem contar o espaço vazio do centro. */
+  function altura() {
+    var cs = getComputedStyle(main), z = parseFloat(main.style.zoom) || 1, topo = Infinity, fundo = -Infinity;
+    for (var i = 0; i < main.children.length; i++) {
+      var r = main.children[i].getBoundingClientRect();
+      if (!r.height) continue;
+      topo = Math.min(topo, r.top); fundo = Math.max(fundo, r.bottom);
+    }
+    return (fundo - topo) + (parseFloat(cs.paddingTop) + parseFloat(cs.paddingBottom)) * z;
+  }
+  function ajustar() {
+    limpar();
+    if (root.classList.contains("chat-full")) { root.classList.remove("fixa"); return; }
+    root.classList.add("fixa");
+    var largura = Math.min(window.innerWidth - 32, 1180), z = 1;
+    for (var k = 0; k < 4; k++) {
+      main.style.zoom = z; main.style.width = (largura / z) + "px";
+      var livre = main.getBoundingClientRect().height * 0.96, precisa = altura();
+      if (precisa <= livre + 1) break;
+      z = z * livre / precisa;
+      if (z < 0.6) { root.classList.remove("fixa"); limpar(); return; } /* tela muito baixa: volta a rolar */
+    }
+  }
+  window.addEventListener("resize", ajustar);
+  window.addEventListener("load", ajustar);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(ajustar);
+  ajustar();
+})();
+</script>
+</body>
+</html>
